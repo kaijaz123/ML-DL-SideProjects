@@ -3,17 +3,11 @@ import numpy as np
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from data_loader import DataGenerator
-from model import build_unet
+from Unet import build_unet
 from tensorflow.keras.callbacks import ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 
-img_path = '/home/kaijaz/Python/segmentation/images'
-mask_path = '/home/kaijaz/Python/segmentation/annotations/trimaps'
-batch_size = 16
-img_size = (128,128,3)
-shuffle = True
-lr = 1e-3
-epochs = 10
-num_classes = 3
+img_path = 'images'
+mask_path = 'annotations/trimaps'
 
 def read_data(path):
     filename = [file.split('.')[0] for file in os.listdir(path)]
@@ -55,4 +49,10 @@ def train(batch_size, img_size, shuffle, lr, epochs, num_classes):
     )
 
 if __name__ == '__main__':
-    train()
+    batch_size = 16
+    img_size = (128,128,3)
+    shuffle = True
+    lr = 1e-3
+    epochs = 10
+    num_classes = 3
+    train(batch_size, img_size, shuffle, lr, epochs, num_classes)
