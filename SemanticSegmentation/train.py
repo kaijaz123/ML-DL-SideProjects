@@ -51,8 +51,8 @@ def train(batch_size, img_size, shuffle, lr, epochs, num_classes):
 if __name__ == '__main__':
     batch_size = 16
     img_size = (128,128,3)
-    shuffle = True
     lr = 1e-3
-    epochs = 10
+    shuffle = True
     num_classes = 3
+    epochs = 10
     train(batch_size, img_size, shuffle, lr, epochs, num_classes)
