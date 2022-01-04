@@ -3,7 +3,9 @@ These projects are meant to demonstrate the pipeline from data processing, clean
 
 # Dataset source
 CreditCard segmentation - https://www.kaggle.com/schorsi/credit-card-customer-segmentation
+
 Movie recommendation - https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hulu-and-disney
+
 WHO life expectancy - https://www.kaggle.com/kumarajarshi/life-expectancy-who
 
 
