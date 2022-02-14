@@ -8,4 +8,6 @@ Movie recommendation - https://www.kaggle.com/ruchi798/movies-on-netflix-prime-v
 
 WHO life expectancy - https://www.kaggle.com/kumarajarshi/life-expectancy-who
 
+Weather Australia Rain Prediction - https://www.kaggle.com/jsphyg/weather-dataset-rattle-package
+
 
